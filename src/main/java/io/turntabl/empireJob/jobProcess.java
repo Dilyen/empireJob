@@ -47,7 +47,7 @@ public class jobProcess {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(System.getenv("ADD_ENDPOINT_STATUS_URL")))
+                .uri(URI.create(System.getenv("STATUS")))//"ADD_ENDPOINT_STATUS_URL"
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(requestBody))
                 .build();
