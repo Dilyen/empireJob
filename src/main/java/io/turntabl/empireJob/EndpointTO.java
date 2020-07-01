@@ -32,13 +32,13 @@ public class EndpointTO {
 
     public void setRequest_method(String request_method) { this.request_method = request_method; }
 
-//     @Override
-//     public String toString() {
-//         return "EndpointTO{" +
-//                 "endpoint_id=" + endpoint_id +
-//                 ", project_id=" + project_id +
-//                 ", endpoint_url='" + endpoint_url + '\'' +
-//                 ", request_method='" + request_method + '\'' +
-//                 '}';
-//     }
-// }
+    @Override
+    public String toString() {
+        return "EndpointTO{" +
+                "endpoint_id=" + endpoint_id +
+                ", project_id=" + project_id +
+                ", endpoint_url='" + endpoint_url + '\'' +
+                ", request_method='" + request_method + '\'' +
+                '}';
+    }
+}
